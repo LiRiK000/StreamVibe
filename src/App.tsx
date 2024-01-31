@@ -1,24 +1,19 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Error from "./pages/Error/Error";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path={"/"} element={<Home/>}/>
+                {/*  Route for the Home page.  */}
+                <Route path="*" element={<Error/>}/>
+                {/* Default route for handling any unknown or undefined routes (404 Error). */}
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
