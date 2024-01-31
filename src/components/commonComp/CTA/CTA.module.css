@@ -1,0 +1,38 @@
+.container {
+    background-image: url('img/BGI.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.textBlock {
+    margin: 100px 0;
+}
+.titleBlock h1{
+    font-family: 'Manrope-Bold', sans-serif;
+    color: white;
+    font-size:250%;
+}
+.titleBlock span{
+    font-family: 'Manrope-Regular', sans-serif;
+    color: #999999;
+    font-size: 150%;
+}
+
+.titleBlock{
+    flex: 1;
+    margin-right: 20px;
+}
+.BtnBlock{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Btn{
+    display: flex;
+    justify-content: center;
+}
+.Btn Button{
+    padding: 15px 50px;
+    border-radius: 10px;
+}

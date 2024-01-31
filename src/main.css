@@ -1,3 +1,26 @@
-html{
-    background-color: #0F0F0F;
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url('../public/Fonts/Manrope-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'Manrope-Medium';
+    src: url('../public/Fonts/Manrope-Medium.ttf')
+}
+
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url('../public/Fonts/Manrope-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Manrope-SemiBold';
+    src: url('../public/Fonts/Manrope-SemiBold.ttf')
+}
+#root, html{
+    background-color: #1E1E1E;
 }
